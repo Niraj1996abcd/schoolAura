@@ -113,7 +113,7 @@ const Header = () => {
 
       <div className="hero fade-in-up">
         <div className="hero-left">
-          <h1>BE A SMART STUDENT</h1>
+          <h1>BE A SMART STUDENT NIRAJ</h1>
           <p>SchoolAura Is A Smart Education Platform</p>
 
           <div className="card-grid">
