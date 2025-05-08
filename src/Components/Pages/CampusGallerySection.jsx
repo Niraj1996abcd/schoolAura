@@ -53,7 +53,7 @@ const CampusGallerySection = () => (
           </div>
         </Col>
         {/* Text Content */}
-        <Col md={6}>
+        <Col md={6} data-aos="zoom-in-up">
           <div>
             <h2 style={{ fontWeight: 700, letterSpacing: 1 }}>
               VISIT OUR CAMPUS

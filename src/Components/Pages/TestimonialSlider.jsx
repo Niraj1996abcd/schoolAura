@@ -72,7 +72,7 @@ const sliderSettings = {
 
 const TestimonialSlider = () => (
   <div style={{ background: "#f5f6fa", padding: "40px 0" }}>
-    <Container>
+    <Container data-aos="zoom-in-up">
       <h2
         className="text-center mb-5"
         style={{ fontWeight: 700, letterSpacing: 1 }}

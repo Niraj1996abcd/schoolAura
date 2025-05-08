@@ -11,28 +11,33 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light">
-      {/* Newsletter */}
-      <div className="bg-light text-center py-4">
-        <h4 className="fw-bold mb-3">
-          SUBSCRIBE OUR <span className="text-danger">NEWSLETTER</span>
-        </h4>
-        <form className="d-flex justify-content-center">
-          <input
-            type="email"
-            className="form-control w-25 rounded-0"
-            placeholder="Email Address"
-          />
-          <button className="btn btn-danger rounded-0">Subscribe</button>
-        </form>
-      </div>
+    <footer className="bg-dark text-light pt-0">
+      {/* Main Footer Container */}
+      <div className="container py-5" style={{ marginTop: "8rem" }}>
+        {/* Newsletter Section */}
+        <div
+          className="bg-light text-center py-4 mb-5 rounded shadow-sm"
+          style={{ marginTop: "-120px", zIndex: 1 }}
+          data-aos="zoom-in-up"
+        >
+          <h4 className="fw-bold mb-3 text-dark">
+            SUBSCRIBE OUR <span className="text-danger">NEWSLETTER</span>
+          </h4>
+          <form className="d-flex justify-content-center">
+            <input
+              type="email"
+              className="form-control w-25 rounded-0 me-2"
+              placeholder="Email Address"
+            />
+            <button className="btn btn-danger rounded-0">Subscribe</button>
+          </form>
+        </div>
 
-      {/* Main Footer Content */}
-      <div className="container py-5 border-top border-secondary">
-        <div className="row">
-          {/* About */}
-          <div className="col-md-3">
-            <h5 className="text-danger">About US</h5>
+        {/* Main Footer Content */}
+        <div className="row" data-aos="zoom-in-up">
+          {/* About Us */}
+          <div className="col-md-3 mb-4">
+            <h5 style={{ color: "#ff5202" }}>About US</h5>
             <p className="small">
               SchoolAura Smart Education Platform is a step towards making
               learning better and effective for the students and help to
@@ -41,8 +46,8 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-md-3">
-            <h5 className="text-danger">Quick Links</h5>
+          <div className="col-md-3 mb-4">
+            <h5 style={{ color: "#ff5202" }}>Quick Links</h5>
             <ul className="list-unstyled small">
               <li>› About Us</li>
               <li>› Benefits</li>
@@ -53,8 +58,8 @@ const Footer = () => {
           </div>
 
           {/* Help & Support */}
-          <div className="col-md-3">
-            <h5 className="text-danger">Help & Support</h5>
+          <div className="col-md-3 mb-4">
+            <h5 style={{ color: "#ff5202" }}>Help & Support</h5>
             <ul className="list-unstyled small">
               <li>› Services</li>
               <li>› Support</li>
@@ -65,21 +70,41 @@ const Footer = () => {
           </div>
 
           {/* Follow Us */}
-          <div className="col-md-3">
-            <h5 className="text-danger">Follow Us</h5>
-            <div className="d-flex gap-2 mt-2">
-              <a href="#" className="text-light bg-primary p-2 rounded-circle">
-                <FaFacebookF />
-              </a>
-              <a href="#" className="text-light bg-danger p-2 rounded-circle">
-                <FaInstagram />
-              </a>
-              <a href="#" className="text-light bg-info p-2 rounded-circle">
-                <FaTwitter />
-              </a>
-              <a href="#" className="text-light bg-success p-2 rounded-circle">
-                <FaWhatsapp />
-              </a>
+          <div className="col-md-3 mb-4">
+            <h5 style={{ color: "#ff5202" }}>Follow Us</h5>
+            <div className="row text-center mt-3">
+              <div className="col-3">
+                <a
+                  href="#"
+                  className="bg-primary text-light p-2 rounded-circle d-inline-block"
+                >
+                  <FaFacebookF />
+                </a>
+              </div>
+              <div className="col-3">
+                <a
+                  href="#"
+                  className="bg-danger text-light p-2 rounded-circle d-inline-block"
+                >
+                  <FaInstagram />
+                </a>
+              </div>
+              <div className="col-3">
+                <a
+                  href="#"
+                  className="bg-info text-light p-2 rounded-circle d-inline-block"
+                >
+                  <FaTwitter />
+                </a>
+              </div>
+              <div className="col-3">
+                <a
+                  href="#"
+                  className="bg-success text-light p-2 rounded-circle d-inline-block"
+                >
+                  <FaWhatsapp />
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -91,7 +116,7 @@ const Footer = () => {
         <div className="row text-center small">
           <div className="col-md-4 mb-3">
             <FaPhoneAlt className="me-2 fs-5 text-light" />
-            <strong className="text-warning">CaLL US</strong>
+            <strong style={{ color: "#ff5202" }}>CaLL US</strong>
             <br />
             <a
               href="tel:+919540349392"
@@ -102,7 +127,7 @@ const Footer = () => {
           </div>
           <div className="col-md-4 mb-3">
             <FaEnvelope className="me-2 fs-5 text-light" />
-            <strong className="text-warning">MAIL US</strong>
+            <strong style={{ color: "#ff5202" }}>MAIL US</strong>
             <br />
             <a
               href="mailto:contact@schoolaura.com"
@@ -113,7 +138,7 @@ const Footer = () => {
           </div>
           <div className="col-md-4 mb-3">
             <FaMapMarkerAlt className="me-2 fs-5 text-light" />
-            <strong className="text-warning">Office Address</strong>
+            <strong style={{ color: "#ff5202" }}>Office Address</strong>
             <br />
             <span className="d-block text-white">
               E 44/3, Pocket D, Okhla Phase II, <br />
@@ -123,7 +148,7 @@ const Footer = () => {
         </div>
 
         {/* Footer Bottom Bar */}
-        <div className="d-flex justify-content-between pt-3 border-top border-secondary small text-secondary">
+        <div className="d-flex justify-content-between pt-3 border-top border-secondary small text-secondary flex-wrap">
           <span>2021 © SchoolAura. All Right Reserved</span>
           <span>
             Design & Development by{" "}

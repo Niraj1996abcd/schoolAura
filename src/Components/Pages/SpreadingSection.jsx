@@ -15,7 +15,7 @@ const stats = [
 const SpreadingSection = () => (
   <Container fluid className="py-5" style={{ backgroundColor: "#f5f6fa" }}>
     <Row className="align-items-center">
-      <Col md={5} className="text-center">
+      <Col md={5} className="text-center" data-aos="zoom-in-up">
         <img
           src={spreadingImage}
           alt="We are spreading"
@@ -32,7 +32,7 @@ const SpreadingSection = () => (
         <h3 style={{ fontWeight: 700, color: "#e74c3c" }}>ARE SPREADING</h3>
         <hr style={{ width: 80, borderTop: "2px solid #ccc", marginLeft: 0 }} />
         <Row className="mt-4">
-          <Col md={6} className="mb-4">
+          <Col md={6} className="mb-4" data-aos="zoom-in-up">
             <div style={{ display: "flex", alignItems: "center" }}>
               <span style={{ fontSize: "2rem", marginRight: 15 }}>🎓</span>
               <div>
@@ -41,7 +41,7 @@ const SpreadingSection = () => (
               </div>
             </div>
           </Col>
-          <Col md={6} className="mb-4">
+          <Col md={6} className="mb-4" data-aos="zoom-in-up">
             <div style={{ display: "flex", alignItems: "center" }}>
               <span style={{ fontSize: "2rem", marginRight: 15 }}>👨‍🎓</span>
               <div>
@@ -52,7 +52,7 @@ const SpreadingSection = () => (
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} data-aos="zoom-in-up">
             <div style={{ display: "flex", alignItems: "center" }}>
               <span style={{ fontSize: "2rem", marginRight: 15 }}>👨‍👩‍👧‍👦</span>
               <div>
@@ -61,7 +61,7 @@ const SpreadingSection = () => (
               </div>
             </div>
           </Col>
-          <Col md={6}>
+          <Col md={6} data-aos="zoom-in-up">
             <div style={{ display: "flex", alignItems: "center" }}>
               <span style={{ fontSize: "2rem", marginRight: 15 }}>👨‍🏫</span>
               <div>

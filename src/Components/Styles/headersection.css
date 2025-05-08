@@ -258,12 +258,13 @@
     padding: 60px 20px;
     background-color: #f9f9f9;
     color: #333;
+    position: relative;
   }
   
   .study-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 0px;
     align-items: flex-start;
     justify-content: space-between;
   }
@@ -277,24 +278,30 @@
   .black-box {
     background-color: #111;
     color: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    padding: 40px 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    position: relative;
+    margin-right: -80px;
+    z-index: 2;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
   }
   
   .black-box ul {
     list-style: none;
     padding-left: 0;
+    margin: 0;
   }
   
   .black-box li {
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     font-size: 18px;
   }
   
   .study-right h2 {
     font-size: 26px;
     margin-bottom: 16px;
+    font-weight: bold;
   }
   
   .study-right p {
@@ -303,20 +310,30 @@
     margin-bottom: 12px;
   }
   
-  /* Student Group Image */
   .students-image-row {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 1;
   }
   
   .students-image-row img {
     max-width: 100%;
     height: auto;
+    margin-top: -40px;
     animation: float 4s ease-in-out infinite;
-    border-radius: 10px;
   }
   
-  /* Reusing existing fade-in-up */
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
   .fade-in-up {
     opacity: 0;
     transform: translateY(40px);
@@ -329,6 +346,30 @@
       transform: translateY(0);
     }
   }
+  
+  /* ✅ Responsive Adjustments */
+  @media (max-width: 768px) {
+    .study-content {
+      flex-direction: column;
+    }
+  
+    .black-box {
+      margin: 0 auto 20px auto;
+      clip-path: none;
+      max-width: 100%;
+      padding: 30px 20px;
+    }
+  
+    .study-right {
+      padding-left: 0;
+    }
+  
+    .students-image-row img {
+      margin-top: 0;
+    }
+  }
+  
+  
 
   .active-tab {
     border-left: 4px solid red;

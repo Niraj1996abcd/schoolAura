@@ -13,7 +13,7 @@ const benefits = [
 function OnlineEducationBenefits() {
   return (
     <Container className="my-5">
-      <Row className="align-items-center">
+      <Row className="align-items-center" data-aos="zoom-in-up">
         <Col md={7}>
           <h2>
             <b>Benefits of</b>
@@ -45,7 +45,7 @@ function OnlineEducationBenefits() {
           />
         </Col>
       </Row>
-      <Row className="mt-4">
+      <Row className="mt-4" data-aos="zoom-in-up">
         <Col>
           <Card className="bg-dark text-white text-center">
             <Card.Body>
